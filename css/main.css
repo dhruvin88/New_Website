@@ -1,0 +1,236 @@
+/* import google fonts */
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8em;
+    white-space: nowrap;
+    font-size: 12vw;
+    z-index: 1000;
+    font-family: 'Bangers', cursive;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+    color: deepskyblue;
+    @include skew(0, -6.7deg, false);
+    @include transition-property(font-size);
+    @include transition-duration(0.5s);
+
+}
+
+h1 a {
+    color: deepskyblue;
+    display: none;
+}
+
+li {
+    margin-bottom: 0.25em;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    text-decoration: bold;
+}
+
+p {
+    font-family: 'Cardo', serif;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: gainsboro;
+}
+
+/* Class CSS */
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.container-fluid {
+    background-color: aliceblue;
+}
+
+.nopadding > div[class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.textInImage {
+    position: absolute;
+    right: 50%;
+    left: 15%;
+    z-index: 10;
+    padding: 20px 20px 20px 20px;
+    color: #fff;
+    background-color: dimgray;
+    top: 15%;
+    text-align: center;
+    animation: moveAcross 3s;
+}
+
+.corner {
+    border-radius: 25px;
+}
+
+.maxSize {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Id Elements CSS */
+
+#content {
+    width: 100vw;
+    height: 100vh;
+}
+
+#sidebar {
+    background-color: gainsboro;
+    min-width: 20%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#socialMedia {
+    position: absolute;
+    left: 4%;
+    z-index: 10;
+    top: 90%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    display: none;
+}
+
+#aboutme {
+    display: block;
+}
+
+#projects {
+    height: 100vh;
+    display: none;
+}
+
+#resume {
+    height: 100vh;
+    display: none;
+}
+
+#contactme {
+    height: 100vh;
+    display: none;
+}
+
+#sidebar.active {
+    display: none;
+}
+
+#socialMedia.active {
+    display: none;
+}
+
+
+#sidebar ul.components {
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: gainsboro;
+}
+
+@keyframes moveAcross {
+    0% {
+        top: -300px;
+    }
+
+    100% {
+        top: 15%;
+    }
+}
+
+@media (max-width: 1050px) {
+    #sidebar {
+        display: none;
+    }
+
+    #socialMedia {
+        display: none;
+    }
+
+    #sidebar.active {
+        display: inline-block;
+    }
+
+    #socialMedia.active {
+        display: inline-block;
+        left: 2.5%;
+    }
+
+    #sidebar ul {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    #sidebar h1 {
+        font-size: 2em;
+    }
+
+    #sidebar h1 a {
+        display: inline-block;
+    }
+
+    #sidebarCollapse {
+        display: inline-block;
+    }
+
+    #content {
+        width: 100%;
+        height: 100%;
+    }
+}

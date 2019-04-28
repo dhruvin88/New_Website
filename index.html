@@ -4,21 +4,31 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhruvin Patel</title>
     <meta name="description" content="About Me">
-    <link rel="stylesheet" href="main.css">
+
+    <!-- My Style Sheet-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Social Media Buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
 
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row nopadding">
-            <div class="col-3" id="sidebar">
-                <h1>
-                    Dhruvin Patel
-                </h1>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <h1>
+                Dhruvin Patel
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </h1>
+            <ul>
                 <li onclick="change('aboutme')">
                     <a href="#">About Me</a>
                 </li>
@@ -31,24 +41,48 @@
                 <li onclick="change('contactme')">
                     <a href="#">Contact</a>
                 </li>
-            </div>
-            <div class="col-9">
-                <div id="aboutme" class="maxSize">
-                    <img src="Images/Engagements_by_Christopher-58.jpg" alt="Picture" class="img-responsive maxSize" />
-                    <div class="textInImage corner">
-                        <p>Hello, my name is Dhruvin Patel and I'm currently graduating with a Master's in Computer Science at Ole Miss. One of my favorite things to do is problem solving. I love the feeling of achieving a solution to a problem, which is one reason why I decided to become a Computer Science Major.
-                        </p>
+            </ul>
+            <div id="socialMedia">
+                        <a href="https://www.linkedin.com/in/dhruvin-patel88/" class="btn btn-social-icon btn-linkedin">
+                            <span class="fa fa-linkedin"></span>
+                        </a>
+                        <a href="https://www.facebook.com/dhruvinp" class="btn btn-social-icon btn-facebook">
+                            <span class="fa fa-facebook"></span>
+                        </a>
+                        <a href="https://twitter.com/dhruvin88" class="btn btn-social-icon btn-twitter">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                        <a href="https://github.com/dhruvin88" class="btn btn-social-icon btn-github">
+                            <span class="fa fa-github"></span>
+                        </a>
                     </div>
+        </nav>
+        <div id="content">
+            <nav class="navbar navbar-expand- navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fa fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <div id="aboutme" class="maxSize">
+                        <img src="Images/Engagements_by_Christopher-58.jpg" alt="Picture" class="img-responsive maxSize" />
+                        <div class="textInImage corner">
+                            <p>Hello, my name is Dhruvin Patel and I'm currently graduating with a Master's in Computer Science at Ole Miss. One of my favorite things to do is problem solving. I love the feeling of achieving a solution to a problem, which is one reason why I decided to become a Computer Science Major.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="resume" class="maxSize">
+                        <embed src="resume_2019.pdf" type="application/pdf" class="maxSize">
+                    </div>
+                    <div id="contactme"></div>
+                    <div id="projects"></div>
+
                 </div>
-                <div id="resume" class="maxSize">
-                    <embed src="resume_2019.pdf" type="application/pdf" class="maxSize">
-                </div>
-                <div id="contactme"></div>
-                <div id="projects"></div>
-            </div>
+
+            </nav>
         </div>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
