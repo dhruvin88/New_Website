@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dhruvin Patel</title>
+    <meta name="description" content="About Me">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row nopadding">
+            <div class="col-3" id="sidebar">
+                <h1>
+                    Dhruvin Patel
+                </h1>
+                <li onclick="change('aboutme')">
+                    <a href="#">About Me</a>
+                </li>
+                <li onclick="change('projects')">
+                    <a href="#">Projects</a>
+                </li>
+                <li onclick="change('resume')">
+                    <a href="#">Resume</a>
+                </li>
+                <li onclick="change('contactme')">
+                    <a href="#">Contact</a>
+                </li>
+            </div>
+            <div class="col-9">
+                <div id="aboutme" class="maxSize">
+                    <img src="Images/Engagements_by_Christopher-58.jpg" alt="Picture" class="img-responsive maxSize" />
+                    <div class="textInImage corner">
+                        <p>Hello, my name is Dhruvin Patel and I'm currently graduating with a Master's in Computer Science at Ole Miss. One of my favorite things to do is problem solving. I love the feeling of achieving a solution to a problem, which is one reason why I decided to become a Computer Science Major.
+                        </p>
+                    </div>
+                </div>
+                <div id="resume" class="maxSize">
+                    <embed src="resume_2019.pdf" type="application/pdf" class="maxSize">
+                </div>
+                <div id="contactme"></div>
+                <div id="projects"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/change.js"></script>
+</body></html>
