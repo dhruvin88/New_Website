@@ -8,6 +8,9 @@
     <title>Dhruvin Patel</title>
     <meta name="description" content="About Me">
 
+    <!--FavIcon-->
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
     <!-- My Style Sheet-->
     <link rel="stylesheet" href="css/main.css">
 
@@ -43,19 +46,19 @@
                 </li>
             </ul>
             <div id="socialMedia">
-                        <a href="https://www.linkedin.com/in/dhruvin-patel88/" class="btn btn-social-icon btn-linkedin">
-                            <span class="fa fa-linkedin"></span>
-                        </a>
-                        <a href="https://www.facebook.com/dhruvinp" class="btn btn-social-icon btn-facebook">
-                            <span class="fa fa-facebook"></span>
-                        </a>
-                        <a href="https://twitter.com/dhruvin88" class="btn btn-social-icon btn-twitter">
-                            <span class="fa fa-twitter"></span>
-                        </a>
-                        <a href="https://github.com/dhruvin88" class="btn btn-social-icon btn-github">
-                            <span class="fa fa-github"></span>
-                        </a>
-                    </div>
+                <a href="https://www.linkedin.com/in/dhruvin-patel88/" class="btn btn-social-icon btn-linkedin">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+                <a href="https://www.facebook.com/dhruvinp" class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a href="https://twitter.com/dhruvin88" class="btn btn-social-icon btn-twitter">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a href="https://github.com/dhruvin88" class="btn btn-social-icon btn-github">
+                    <span class="fa fa-github"></span>
+                </a>
+            </div>
         </nav>
         <div id="content">
             <nav class="navbar navbar-expand- navbar-light bg-light">
@@ -75,7 +78,40 @@
                     <div id="resume" class="maxSize">
                         <embed src="resume_2019.pdf" type="application/pdf" class="maxSize">
                     </div>
-                    <div id="contactme"></div>
+                    <div id="contactme">
+                        <div class="container">
+                            <h3>Contact Me</h3>
+                            <p> Please do not hesist to contact me if you have any question about me or a project I have worked on or interested in projects.</p>
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-6">
+                                    <form id="javascript_form">
+                                        <input type="text" name="subject" placeholder="Subject" />
+                                        <textarea name="text" placeholder="Message"></textarea>
+                                        <input type="submit" id="js_send" value="Send" />
+
+                                        <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+                                        <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="row">
+                                <img src="Images/Email.png">
+                                <h5>Dhruvinp895@gmail.com</h5>
+                                <img src="Images/Phone.png">
+                                <h5>(662)-313-4033</h5>
+                            </div>
+                            <div class="row">
+                                <img src="Images/linkedin.png">
+                                <img src="Images/Github.png">
+                            </div>
+                            <div class="row">
+                                <img src="Images/Twitter.png">
+                                <img src="Images/facebook.png">
+                            </div>
+                            -->
+                        </div>
+                    </div>
                     <div id="projects"></div>
 
                 </div>
@@ -87,5 +123,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="js/change.js"></script>
-</body></html>
+    <script type="text/javascript" src="js/email.js"></script>
+</body>
+
+</html>
