@@ -7,13 +7,16 @@
     };
 
     function js_onSuccess() {
-        // remove this to avoid redirect
-        window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+        alert("Message was sent successfully!");
+        var submitButton = document.getElementById("submit_form");
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 3000);
     }
 
     function js_onError(error) {
-        // remove this to avoid redirect
-        window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+        alert("Error: Did not send message");
     }
 
     var sendButton = document.getElementById("js_send");

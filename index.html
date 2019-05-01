@@ -45,6 +45,7 @@
                     <a href="#">Contact</a>
                 </li>
             </ul>
+            <!--
             <div id="socialMedia">
                 <a href="https://www.linkedin.com/in/dhruvin-patel88/" class="btn btn-social-icon btn-linkedin">
                     <span class="fa fa-linkedin"></span>
@@ -59,8 +60,10 @@
                     <span class="fa fa-github"></span>
                 </a>
             </div>
+            -->
         </nav>
         <div id="content">
+            <div>
             <nav class="navbar navbar-expand- navbar-light bg-light">
                 <div class="container-fluid">
 
@@ -81,12 +84,15 @@
                     <div id="contactme">
                         <div class="container">
                             <h3>Contact Me</h3>
-                            <p> Please do not hesist to contact me if you have any question about me or a project I have worked on or interested in projects.</p>
+                            <p> Please do not hesist to contact me if you have any question about me or a project I have worked on or interested in working with me!</p>
                             <div class="row justify-content-md-center">
-                                <div class="col-md-6">
+                                <div class="col-8">
                                     <form id="javascript_form">
-                                        <input type="text" name="subject" placeholder="Subject" />
-                                        <textarea name="text" placeholder="Message"></textarea>
+                                        <h5>Send Me a E-Mail</h5>
+                                        <input type="text" class="maxSize" name="subject" placeholder="Name and Subject" />
+                                        <div class="w-100"></div>
+                                        <textarea name="text" class="maxSize" placeholder="Message"></textarea>
+                                        <div class="w-100"></div>
                                         <input type="submit" id="js_send" value="Send" />
 
                                         <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
@@ -94,30 +100,63 @@
                                     </form>
                                 </div>
                             </div>
-                            <!--
-                            <div class="row">
+
+                            <div class="row justify-content-md-center">
+                                <!--
                                 <img src="Images/Email.png">
-                                <h5>Dhruvinp895@gmail.com</h5>
                                 <img src="Images/Phone.png">
-                                <h5>(662)-313-4033</h5>
+                                -->
+                                <a href="https://www.linkedin.com/in/dhruvin-patel88/">
+                                    <img src="Images/linkedin.png">
+                                </a>
+                                <a href="https://github.com/dhruvin88">
+                                    <img src="Images/Github.png">
+                                </a>
+                                <a href="https://twitter.com/dhruvin88">
+                                    <img src="Images/Twitter.png">
+                                </a>
+                                <a href="https://www.facebook.com/dhruvinp">
+                                    <img src="Images/facebook.png">
+                                </a>
                             </div>
-                            <div class="row">
-                                <img src="Images/linkedin.png">
-                                <img src="Images/Github.png">
-                            </div>
-                            <div class="row">
-                                <img src="Images/Twitter.png">
-                                <img src="Images/facebook.png">
-                            </div>
-                            -->
+
                         </div>
                     </div>
-                    <div id="projects"></div>
+
+                    <div id="projects">
+                        <div class="container-fluid">
+                            <div class="row justify-content-md-center">
+                                <h3> Master's Project: Transfer Learning in CNNs with Medical Images</h3>
+                                <div class="w-100"></div>
+                                <img src="Images/transfer_learning.png" class="col-md-7" id="transferImage">
+                                <p class="col-md-5">For my Master's project, I'm testing if pretained image models trained on ImageNet can help improve performance in specific medical image datasets. I will be testing which layers and how many layers in a CNN are generalize or specific to a task. Also, testing to see if using a pretained model with small amount of training data can outperfrom a model that is only trained on that task.</p>
+
+                            </div>
+                            <hr>
+                            <div class="row justify-content-md-center">
+                                <h3>Ole Miss Alexa Skills</h3>
+                                <div class="w-100"></div>
+                                <img src="Images/skill.png"  class="col-md-3" id="skillImg">
+                                <div class="col-md-5">
+                                <p>Instead of looking up dates for Ole Miss events, ask Alexa. Some features include ask when a semester start, what sports play today, play Rebel Radio, when is advising, when is spring break, when is finals, and more.</p>
+                                <a href="https://www.amazon.com/Dhruvin-Patel-Ole-Miss-Skill/dp/B07GJMCQQP">Click here to enable your Alexa device</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row justify-content-md-center">
+                                <h3>Text Summarizer GUI</h3>
+                                <div class="w-100"></div>
+                                <img src="Images/textsum.png" class="col-md-7" id="texsumImg">
+                                <p class="col-md-5">Program was made for the Center of Intelligence and Security Studies at Ole Miss. It takes a input URL or text and extracts the articles and summarizer based on the ratio of the input article length. The program is using a Python GUI and Gensim library package.</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
             </nav>
         </div>
+            </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -34,7 +34,6 @@ h3 {
 
 }
 h5{
-    padding-top: 50px;
     font-family: 'Bangers';
 }
 h1 a {
@@ -118,18 +117,22 @@ ul ul a {
     height: 100%;
 }
 
+.scrollable{
+    overflow-y: scroll;
+}
+
 
 /* Id Elements CSS */
 
 #content {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 #sidebar {
     background-color: gainsboro;
     min-width: 20%;
-    min-height: 100vh;
+    min-height: 100%;
     transition: all 0.3s;
 }
 
@@ -151,7 +154,6 @@ ul ul a {
 }
 
 #projects {
-    height: 100vh;
     display: none;
 }
 
@@ -199,6 +201,19 @@ a[aria-expanded="true"] {
     background: gainsboro;
 }
 
+#transferImage{
+    height: 300px;
+    width: 300px;
+}
+#texsumImg{
+    height: 500px;
+    width: 250px;
+}
+#skillImg{
+    height: 210px;
+    width: 210px;
+}
+
 @keyframes moveAcross {
     0% {
         top: -300px;
@@ -209,7 +224,7 @@ a[aria-expanded="true"] {
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 950px) {
     #sidebar {
         display: none;
     }
