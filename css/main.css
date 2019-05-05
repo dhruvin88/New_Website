@@ -155,7 +155,7 @@ ul ul a {
 
 #projects {
     display: none;
-    width: 70vw;
+    width: 85vw;
 }
 
 #resume {
@@ -236,12 +236,17 @@ ul ul a {
         right: 15%;
         left: 15%;
         z-index: 10;
-        padding: 0px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
         color: #fff;
         background-color: dimgray;
         top: 60%;
         text-align: center;
         animation: moveAcross 3s;
+    }
+
+    #projects {
+        display: none;
+        width: 100vw;
     }
 
     #sidebar li {
@@ -286,6 +291,11 @@ ul ul a {
         height: 100%;
     }
 
+    #texsumImg {
+        height: 75vw;
+        width: 75vw;
+    }
+
     @keyframes moveAcross {
         0% {
             top: -300px;
@@ -304,32 +314,7 @@ ul ul a {
         right: 15%;
         left: 15%;
         z-index: 10;
-        padding: 0px 20px 20px 20px;
-        color: #fff;
-        background-color: dimgray;
-        top: 50%;
-        text-align: center;
-        animation: moveAcross 3s;
-    }
-
-    @keyframes moveAcross {
-        0% {
-            top: -300px;
-        }
-
-        100% {
-            top: 50%;
-        }
-    }
-}
-
-@media (max-width: 530px) {
-    .textInImage {
-        position: absolute;
-        right: 15%;
-        left: 15%;
-        z-index: 10;
-        padding: 0px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
         color: #fff;
         background-color: dimgray;
         top: 40%;
@@ -344,6 +329,31 @@ ul ul a {
 
         100% {
             top: 40%;
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .textInImage {
+        position: absolute;
+        right: 15%;
+        left: 15%;
+        z-index: 10;
+        padding: 20px 20px 20px 20px;
+        color: #fff;
+        background-color: dimgray;
+        top: 30%;
+        text-align: center;
+        animation: moveAcross 3s;
+    }
+
+    @keyframes moveAcross {
+        0% {
+            top: -300px;
+        }
+
+        100% {
+            top: 30%;
         }
     }
 }
